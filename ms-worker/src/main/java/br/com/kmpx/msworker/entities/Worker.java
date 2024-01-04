@@ -3,6 +3,7 @@ package br.com.kmpx.msworker.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,8 +17,13 @@ public class Worker implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="a001_id")
 	private Long id;
+	
+	@Column(name="a001_name")
 	private String name;
+	
+	@Column(name="a001_dailyIncome")
 	private Double dailyIncome;
 
 	public Worker() {
