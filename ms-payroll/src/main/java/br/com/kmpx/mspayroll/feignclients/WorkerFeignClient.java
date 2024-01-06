@@ -10,7 +10,7 @@ import br.com.kmpx.mspayroll.entities.Worker;
 
 
 @Component
-@FeignClient(name = "ms-worker", url =  "localhost:8001", path = "/workers")
+@FeignClient(name = "ms-worker", path = "/workers")
 public interface WorkerFeignClient {
 
 	@GetMapping(value = "/{id}")
