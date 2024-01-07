@@ -20,7 +20,7 @@ public class Role implements Serializable{
 	@Column(name="a002_id")
 	private Long id;
 	
-	@Column(name="a002_roleName")
+	@Column(name="a002_role_name")
 	private String roleName;
 	
 	public Role() {
