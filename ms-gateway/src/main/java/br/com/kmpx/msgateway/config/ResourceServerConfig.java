@@ -18,7 +18,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 	
 	private static final String[] PUBLIC = {"/ms-oauth/oauth/token"};
 	private static final String[] OPERATOR = {"/ms-worker/**"};
-	private static final String[] ADMIN = {"/ms-payroll/**", "/ms-user/**"};
+	private static final String[] ADMIN = {"/ms-payroll/**", "/ms-user/**", "/actuator/**", "/ms-worker/actuator/**", "/ms-oauth/actuator/**"};
 		
 	@Override
 	public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
